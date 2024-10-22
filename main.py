@@ -14,13 +14,34 @@ def task1():
     return count              
 
 def task2():
-    pass
+    count = 0
+    while count < 100:
+        num = int(input("Enter the num: "))
+        if num % 10 == 7:
+            count += num
 
 def task3():
-    pass
+    l = []
+    end = False
+    while True:
+        num = int(input("Enter the num: "))
+        l.append(num)
+        if num == 0:
+            if end == True:
+                break
+            end = True
+    return l        
+
 
 if __name__ == "__main__":
     print("Program started")
     print("begin task1")
     print(f"task1: {task1()}")   
+    print("task2 begin")
+    task2()
+    print("task2 end")
+    print("task 3 begin")
+    print(f"task3: {task3()}")
+    
+
 
